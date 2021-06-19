@@ -1,4 +1,4 @@
-# JavaScript-web-projects
+# Web-50-20
 
 Web projects built with HTML, CSS &amp; JavaScript
 
