@@ -8,4 +8,18 @@ Generate inspiring quotes | [**DEMO**](https://howiework.github.io/FIXME/)
 
 ## KEYWORDS
 
-FIXME OOP, Project planning, Geolocation API, Web Storage API, External libraries
+FIXME API \*fetch/local;
+
+## FEATURES
+
+Mobile responsive
+Loader
+Share quotes to Twitter
+
+## Source
+
+1. [Hero Patterns](https://www.heropatterns.com/)
+
+2. [Font Awesome](https://fontawesome.com/)
+
+3. [Inspirational Quotes](https://quotes-react.netlify.app/)
