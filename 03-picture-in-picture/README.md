@@ -4,7 +4,7 @@
 
 ## Brief
 
-FIXME One sentence about this project | [**DEMO**](https://howiework.github.io/FIXME/)
+Picture in picture | [**DEMO**](https://howiework.github.io/FIXME/)
 
 ## KEYWORDS
 
