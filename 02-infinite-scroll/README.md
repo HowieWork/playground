@@ -4,8 +4,8 @@
 
 ## Brief
 
-FIXME One sentence about this project | [**DEMO**](https://howiework.github.io/FIXME/)
+Get random photos infinitely | [**DEMO**](https://howiework.github.io/FIXME/)
 
 ## KEYWORDS
 
-FIXME Unsplash API,
+Unsplash API
