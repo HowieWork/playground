@@ -8,4 +8,4 @@ FIXME One sentence about this project | [**DEMO**](https://howiework.github.io/F
 
 ## KEYWORDS
 
-FIXME OOP, Project planning, Geolocation API, Web Storage API, External libraries
+Web APIs
