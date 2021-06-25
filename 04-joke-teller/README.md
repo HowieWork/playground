@@ -12,4 +12,6 @@ Text-to-speech API, Joke API
 
 ## FLOWCHART
 
+<!-- FIXME Please use flowchart of your own version-->
+
 ![Joke Teller flowchart](./Joke-Teller-Flowchart.png 'Joke Teller flowchart')
