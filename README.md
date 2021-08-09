@@ -1,10 +1,10 @@
-# Web Is Fun
+# Playground
 
 Web projects built with HTML, CSS &amp; JavaScript
 
 ## Brief
 
-Web-is-fun (WIF) is a central place for gathering all the projects (small / mid-sized) I have built with HTML, CSS and JavaScript following courses below:
+Playground is a central place for gathering all the projects (small / mid-sized) I have built with HTML, CSS and JavaScript following courses below:
 
 [20 Projects to Build Your Portfolio](https://www.udemy.com/course/javascript-web-projects-to-build-your-portfolio-resume/)
 
