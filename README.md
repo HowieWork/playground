@@ -19,3 +19,5 @@ Stay sharp and focus on foundamentals.
 Learning through practising. This repo works as a roadmap to track front-end knowledge I have learned, also an opportunity to tweak or reflect through these projects.
 
 ## Projects
+
+### TBD
