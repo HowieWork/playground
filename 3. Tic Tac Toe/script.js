@@ -1,17 +1,19 @@
 'use strict';
-// problem -> sub-problems
-// STEP 1:
-// 1. Click each game square: X -> player 1; O -> player 2
-// 2. Remember record game square's location
-// 3. Update h2
+/*
+problem -> sub-problems
+STEP 1:
+1. Click each game square: X -> player 1; O -> player 2
+2. Remember record game square's location
+3. Update h2
 
-// STEP 2:
-// 1. Determine when the game ends: check click square causes the player win the game
-// (1) Assume didPlayerWin
+STEP 2:
+1. Determine when the game ends: check click square causes the player win the game
+(1) Assume didPlayerWin
 
-// STEP 3 *END GAME PHASE
-// 1. Show restart button
-// 2. Click restart button --> Reset the board
+STEP 3 *END GAME PHASE
+1. Show restart button
+2. Click restart button --> Reset the board
+*/
 const BOARD_WIDTH = 3;
 
 let boardState = generateEmptyBoardState();
