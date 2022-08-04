@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <!-- CSS style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- script -->
+    <script src="script.js" defer></script>
+
+    <title>Sudoku</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <table id="board" role="grid">
+        <colgroup span="3"></colgroup>
+        <colgroup span="3"></colgroup>
+        <colgroup span="3"></colgroup>
+        <tbody>
+          <tr>
+            <td class="given-number">5</td>
+            <td class="given-number">7</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">1</td>
+            <td class="given-number">8</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">3</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">8</td>
+            <td class="given-number">6</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">4</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">2</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">9</td>
+            <td class="given-number">2</td>
+            <td class="given-number">6</td>
+            <td class="given-number">7</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">8</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">1</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">8</td>
+            <td class="given-number">6</td>
+            <td class="given-number">3</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">4</td>
+            <td class="given-number">7</td>
+          </tr>
+          <tr>
+            <td class="given-number">4</td>
+            <td class="given-number">2</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">1</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">7</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">2</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">1</td>
+            <td class="given-number">9</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="given-number">7</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">3</td>
+            <td class="given-number">2</td>
+            <td class="given-number">9</td>
+            <td class="given-number">8</td>
+            <td class="given-number">5</td>
+            <td class="given-number">1</td>
+            <td class="given-number">6</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">5</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">8</td>
+            <td class="given-number">4</td>
+          </tr>
+          <tr>
+            <td class="given-number">8</td>
+            <td class="given-number">5</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">7</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">6</td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td>
+              <span class="candidates"></span>
+              <span class="value"></span>
+            </td>
+            <td class="given-number">9</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div id="controls">
+        <div id="number-controls">
+          <button class="number-control">1</button>
+          <button class="number-control">2</button>
+          <button class="number-control">3</button>
+          <button class="number-control">4</button>
+          <button class="number-control">5</button>
+          <button class="number-control">6</button>
+          <button class="number-control">7</button>
+          <button class="number-control">8</button>
+          <button class="number-control">9</button>
+        </div>
+
+        <input
+          type="checkbox"
+          id="candidate-switch"
+          aria-label="Is candidate move"
+        />
+      </div>
+    </div>
+  </body>
+</html>

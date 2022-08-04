@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: dodgerblue;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+colgroup {
+  border: 3px solid black;
+}
+
+tr:nth-of-type(3n) {
+  border-bottom: 3px solid black;
+}
+
+td {
+  position: relative;
+  border: 1px solid black;
+  padding: 0;
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  background-clip: padding-box;
+}
+
+.selected {
+  background-color: #fcfa13;
+}
+
+.given-number {
+  cursor: default;
+  background-color: #cfcfcf;
+}
+
+.candidates {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  color: #404040;
+}
+
+#controls {
+  height: fit-content;
+  padding: 12px;
+  border: 3px solid black;
+  background-color: white;
+}
+
+#number-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  grid-gap: 12px;
+}
+
+.number-control {
+  font-size: 24px;
+  height: 2em;
+  width: 2em;
+}
+
+#candidate-switch {
+  appearance: none;
+  width: 100%;
+  height: 36px;
+  position: relative;
+  border-radius: 24px;
+  margin-top: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #9f9f9f;
+  transition: 0.2s;
+  background-color: #3cde14;
+}
+
+#candidate-switch:before {
+  content: 'Candidate Move             Normal Move';
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: calc(50% - 15px);
+  left: 4px;
+  border-radius: 50%;
+  font-weight: bold;
+  white-space: pre;
+  text-indent: -115px;
+  font-size: 14px;
+  background-color: white;
+  color: white;
+  transition: 0.2s;
+}
+
+#candidate-switch:checked {
+  background-color: #0eb9de;
+}
+
+#candidate-switch:checked:before {
+  left: calc(100% - 30px - 4px);
+}
